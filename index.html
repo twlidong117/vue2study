@@ -15,6 +15,16 @@
       <h1>length:</h1>
       <p>{{info.length}},只有表达式！</p>
       <!--<p>错误示范：{{if(info.length > 4) {console.log('yes')}}}，检查控制台输出</p>-->
+      <h1>part5</h1>
+      <h3>list render</h3>
+      <ul class="list-group">
+        <li class="list-group-item" v-for="item in list" v-text="item"></li>
+      </ul>
+      <div class="input-group">
+        <input type="text" class="form-control" v-model="userInput">
+        <button class="btn btn-default" type="button" @click="addItem">add item</button>
+        <button class="btn btn-danger" type="button" @click="removeItem">remove item</button>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
