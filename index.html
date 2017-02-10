@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>data:</h1>
+      <p>{{info}}</p>
+      <h1>length:</h1>
+      <p>{{info.length}},只有表达式！</p>
+      <!--<p>错误示范：{{if(info.length > 4) {console.log('yes')}}}，检查控制台输出</p>-->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
