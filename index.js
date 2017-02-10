@@ -1,5 +1,8 @@
 var data = {
-  info: 'data-info,obj'
+  info: 'data-info,obj',
+  dire: 'manynewdirectors',
+  status: 'loading',
+  show: true
 }
 var app = new Vue({
   el: '#app',

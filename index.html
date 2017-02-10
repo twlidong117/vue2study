@@ -17,6 +17,18 @@
       <!--<p>错误示范：{{if(info.length > 4) {console.log('yes')}}}，检查控制台输出</p>-->
       <h1>part2</h1>
       <input type="text" v-model="info">
+      <h1>part3</h1>
+      <p v-text="dire" v-once></p>
+      <div v-if="status === 'loading'">
+        <div class="alert alert-warning">loading</div>
+      </div>
+      <div v-else-if="status === 's'">
+        <div class="alert alert-success">success</div>
+      </div>
+      <div v-else>
+        <div class="alert alert-danger">failed</div>
+      </div>
+      <p v-show="show">showshow</p>
     </div>
     <script src="index.js"></script>
   </body>
